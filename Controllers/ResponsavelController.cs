@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Logistica.Controllers
 {
+    //Controller
     [ApiController]
     [Route("[Controller]")]
     public class ResponsavelController : ControllerBase
