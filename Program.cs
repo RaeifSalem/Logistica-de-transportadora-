@@ -1,6 +1,9 @@
+using Logistica.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSqlServer<ApplicationDBContext>(builder.Configuration["ConnectionString : Database"]); 
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

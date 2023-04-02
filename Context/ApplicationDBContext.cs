@@ -12,6 +12,6 @@ namespace Logistica.Context
         public DbSet<Status> status { get; set; }
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<TipoNotaFiscal> TiposNotasFiscais { get; set; }
-
+        public ApplicationDBContext(DbContextOptions<ApplicationDBContext>options) : base(options){ }
     }
 }
