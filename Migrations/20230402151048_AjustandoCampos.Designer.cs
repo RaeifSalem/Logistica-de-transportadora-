@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Logistica.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20230402150025_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230402151048_AjustandoCampos")]
+    partial class AjustandoCampos
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -105,7 +105,7 @@ namespace Logistica.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("servicos");
+                    b.ToTable("Servicos");
                 });
 
             modelBuilder.Entity("Logistica.Entities.Status", b =>
@@ -121,7 +121,7 @@ namespace Logistica.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("status");
+                    b.ToTable("Status");
                 });
 
             modelBuilder.Entity("Logistica.Entities.Ticket", b =>
